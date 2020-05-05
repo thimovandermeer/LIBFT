@@ -5,8 +5,8 @@
 /*                                                     +:+                    */
 /*   By: thvan-de <thvan-de@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/01/07 16:33:15 by thvan-de       #+#    #+#                */
-/*   Updated: 2020/03/12 13:46:33 by thvan-de      ########   odam.nl         */
+/*   Created: 2020/01/07 16:33:15 by thvan-de      #+#    #+#                 */
+/*   Updated: 2020/04/15 11:29:40 by thimo         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,10 +108,7 @@ int		get_next_line(const int fd, char **line)
 		s[fd][ret] = '\0';
 		*line = ft_strjoingnlcheck(*line, s[fd]);
 		if (ret == 0 || ret == -1)
-		{
-			ft_bzero(s[fd], BUFFER_SIZE + 1);
 			return (ret);
-		}
 		if (ft_strchrgnl(s[fd], '\n'))
 		{
 			swapgnl(s[fd]);
