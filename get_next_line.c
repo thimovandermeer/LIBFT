@@ -6,12 +6,12 @@
 /*   By: thvan-de <thvan-de@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/01/07 16:33:15 by thvan-de      #+#    #+#                 */
-/*   Updated: 2020/04/15 11:29:40 by thimo         ########   odam.nl         */
+/*   Updated: 2020/05/05 13:43:31 by thimo         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <stdio.h>
 char	*ft_substrgnl(char *s, unsigned int start, size_t len)
 {
 	size_t	i;
